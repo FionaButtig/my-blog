@@ -78,9 +78,14 @@ a{
     color: #000000;
 }
 
-.post > .date,
+.post > .date{
+    float: right;
+    margin-top: 8px;
+    margin-right: 8px;
+}
 .post > .actions {
     float: right;
+    margin-top: 4px;
 }
 
 .btn-secondary,
@@ -88,6 +93,8 @@ a{
     color: #2eb20d;
     background: none;
     border-color: #2eb20d;
+    margin-left: 8px;
+    margin-top: 0px;
 }
 
 .btn-secondary:hover {
