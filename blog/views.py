@@ -5,6 +5,9 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
 
+# basically switching to a different html site on the site and this defines what django models and stuff the site contains
+
+# needs styling 
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
