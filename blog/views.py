@@ -28,11 +28,13 @@ from django.shortcuts import render
 # the . before models menas current directory or current application 
 from .models import Post
 
+#info zum Post anschauen
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
 
+# Post editing window aufrufen wo man titel und inhalt und so ändern kann
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
