@@ -1,5 +1,124 @@
 {% load static %}
 <!DOCTYPE html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Rubik:ital,wght@0,500;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700;900&family=Rubik:ital,wght@0,500;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700;900&family=Rubik:ital,wght@0,500;1,800&display=swap');
+
+
+* {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.page-header {
+  background-color: #2869b9;
+  width: 100%;
+  height: 8%;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Lobster';
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Roboto';
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.date {
+  color: #828282;
+}
+
+.save {
+  float: right;
+}
+
+.post-form textarea,
+.post-form input {
+  width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+  color: #ffffff;
+  float: right;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+.post {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  background: #e2e2e2;
+  padding: 22px;
+  border-radius: 16px;
+}
+
+.post h2 a,
+.post h2 a:visited { 
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #000000;
+}
+
+.post > .date {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.post > .actions {
+  float: right;
+  margin-top: 4px;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+  color: #2eb20d;
+  background: none;
+  border-color: #2eb20d;
+  margin-left: 8px;
+  margin-top: 0px;
+}
+
+.btn-secondary:hover {
+  color: #FFFFFF;
+  background-color: #2eb20d;
+}
+/*# sourceMappingURL=style.css.map */
+</style>
+
 <html>
     <head>
         <title>Fionas blog</title>
@@ -14,7 +133,7 @@
                 {% include './iconsF/file-earmark-plus.svg' %}
             </a>
         {% endif %}
-              <h1><a href="/">Blog</a></h1>
+              <h1><a href="/">Blog - Fiona Buttig</a></h1>
           </div>
         </header>
         <main class="container">
